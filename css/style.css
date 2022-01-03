@@ -411,7 +411,7 @@ p {
 }
 
 .settings-themes-table:before {
-    content: 'Kommer snart';
+    /* content: 'Kommer snart';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -424,7 +424,7 @@ p {
     height: 10rem;
     background-color: rgba(0, 0, 0, 50%);
     border-radius: 10px;
-    z-index: 30;
+    z-index: 30; */
 }
 
 .settings-themes h2 {
@@ -477,7 +477,7 @@ p {
     justify-content: center;
     align-items: center;
     background-color: var(--color-red);
-    box-shadow: 3px 3px 6px var(--color-black-light);
+    box-shadow: 0px 3px 6px var(--color-black-light);
     position: absolute;
     bottom: 5rem;
     color: var(--main-ui-bg);

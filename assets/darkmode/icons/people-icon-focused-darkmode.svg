@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54.299" height="48" viewBox="0 0 54.299 48">
+  <g id="people-icon-focused-darkmode" transform="translate(-7.43 -17.038)">
+    <g id="Group_610" data-name="Group 610" transform="translate(10 20)">
+      <g id="Group_615" data-name="Group 615">
+        <g id="Rectangle_103" data-name="Rectangle 103" transform="translate(0.43 24.038)" fill="#7942cb" stroke="#7942cb" stroke-linecap="round" stroke-width="3">
+          <path d="M15.75,0h4.5A15.75,15.75,0,0,1,36,15.75v0A2.25,2.25,0,0,1,33.75,18H2.25A2.25,2.25,0,0,1,0,15.75v0A15.75,15.75,0,0,1,15.75,0Z" stroke="none"/>
+          <path d="M16.326-1.5h3.349A17.826,17.826,0,0,1,37.5,16.326v0A3.174,3.174,0,0,1,34.326,19.5H1.674A3.174,3.174,0,0,1-1.5,16.326v0A17.826,17.826,0,0,1,16.326-1.5Z" fill="none"/>
+        </g>
+        <g id="Ellipse_31" data-name="Ellipse 31" transform="translate(9.43 0.038)" fill="#7942cb" stroke="#7942cb" stroke-width="3">
+          <circle cx="9" cy="9" r="9" stroke="none"/>
+          <circle cx="9" cy="9" r="10.5" fill="none"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_610-2" data-name="Group 610" transform="translate(38.648 20.002)">
+      <path id="Subtraction_7" data-name="Subtraction 7" d="M4.25,18.033A9.03,9.03,0,0,1,0,16.97,11.033,11.033,0,0,0,3.348,9.017,11.036,11.036,0,0,0,0,1.063,9.019,9.019,0,0,1,10.625,2.642,9.016,9.016,0,0,1,4.25,18.033Z" fill="#7942cb"/>
+      <path id="Subtraction_6" data-name="Subtraction 6" d="M17.375,18.032H9.225a4.027,4.027,0,0,0,.486-1.919A18.19,18.19,0,0,0,0,0h3.85A15.675,15.675,0,0,1,15.008,4.622a15.673,15.673,0,0,1,4.621,11.156A2.257,2.257,0,0,1,17.375,18.032Z" transform="translate(3.451 24.042)" fill="#7942cb"/>
+    </g>
+  </g>
+</svg>

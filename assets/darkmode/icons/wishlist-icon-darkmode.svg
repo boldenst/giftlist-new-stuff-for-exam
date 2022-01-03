@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="52" viewBox="0 0 44 52">
+  <g id="wishlist-icon-darkmode" transform="translate(-20.316 -15.035)">
+    <g id="Path_2987" data-name="Path 2987" transform="translate(20.316 15.035)" fill="none">
+      <path d="M4,0H40a4,4,0,0,1,4,4V40A12,12,0,0,1,32,52H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" stroke="none"/>
+      <path d="M 4 2 C 2.897201538085938 2 2 2.897201538085938 2 4 L 2 48 C 2 49.10279846191406 2.897201538085938 50 4 50 L 32 50 C 37.51401901245117 50 42 45.51401901245117 42 40 L 42 4 C 42 2.897201538085938 41.10279846191406 2 40 2 L 4 2 M 4 0 L 40 0 C 42.20914077758789 0 44 1.790859222412109 44 4 L 44 40 C 44 46.62741851806641 38.62741851806641 52 32 52 L 4 52 C 1.790859222412109 52 0 50.20914077758789 0 48 L 0 4 C 0 1.790859222412109 1.790859222412109 0 4 0 Z" stroke="none" fill="#828282"/>
+    </g>
+    <g id="Group_622" data-name="Group 622" transform="translate(28.926 30.249)">
+      <path id="Path_882" data-name="Path 882" d="M0,0H26.258" transform="translate(0.372 0)" fill="none" stroke="#828282" stroke-linecap="round" stroke-width="2"/>
+      <path id="Path_883" data-name="Path 883" d="M0,0H22.316" transform="translate(0 10.786)" fill="none" stroke="#828282" stroke-linecap="round" stroke-width="2"/>
+      <path id="Path_884" data-name="Path 884" d="M0,0H22.316" transform="translate(0 21.572)" fill="none" stroke="#828282" stroke-linecap="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
