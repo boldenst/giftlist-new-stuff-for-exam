@@ -1,0 +1,14 @@
+:root {
+    --color-primary: #7942CB;
+    --color-drop-shadow: #353452;
+    --color-list-backgound: #21202F;
+    --color-backgound: #121212;
+    --color-nav: #181818;
+    --color-gray-text: #828282;
+    --color-text: #FFFFFF;
+    --color-checkmark: #487EC6;
+}
+
+.heading, .text {
+    color: var(--color-text);
+}
