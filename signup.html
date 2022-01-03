@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" href="./assets/images/logo-72x72.png" type="image/x-icon">
+    <title>Opret bruger | Gavelisten</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ral6jgm.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Sign up -->
+    <div id="modal-signup" class="modal">
+        <div class="auth-container signup-container">
+            <form id="signup-form" class="auth-form">
+                <h2>Opret bruger</h2>
+                <input id="signup-username" type="username" placeholder="Brugernavn" required />
+                <input id="signup-email" type="email" placeholder="Email" required />
+                <input id="signup-password" type="password" placeholder="Kodeord" required />
+                <button class="auth-signup-btn">Opret bruger</button>
+                <p>Har du en bruger<a href="./login.html"> Log ind her!</a></p>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Log in that needs to be here for the sign up feature to work-->
+    <div class="auth-container login-container">
+        <form id="login-form" class="auth-form">
+        </form>
+    </div>
+
+    <!-- Relavant scripts -->
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+    <script src="./js/firebase.js"></script>
+    <script src="./js/auth.js"></script>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

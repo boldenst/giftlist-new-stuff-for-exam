@@ -1,0 +1,154 @@
+/* Animating logo on index page */
+
+#logo-green-circle {
+    opacity: 0;
+    animation-name: circle;
+    animation: circle 1s forwards;
+}
+
+#box {
+    opacity: 0;
+    animation-name: box;
+    animation: box 1s .5s forwards;
+}
+
+#logo-box-lid, #logo-box-bottom-left, #logo-check {
+    opacity: 0;
+}
+
+#logo-box-bottom-right {
+    transform: scale(2);
+    transform-origin: 100px 100px;
+    animation-name: scale-down;
+    animation: scale-down .5s 2s forwards;
+}
+
+#logo-box-bottom-left {
+    animation-name: box-bottom-slide;
+    animation: box-bottom-slide .5s 2s forwards;
+}
+
+#logo-box-lid {
+    animation-name: box-lid-slide;
+    animation: box-lid-slide .5s 2s forwards;
+}
+
+#logo-check {
+    animation-name: check-slide;
+    animation: check-slide .5s 3s forwards;
+}
+
+/* Keyframes for animated logo */
+
+@keyframes circle {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes box {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes scale-down {
+    0% {
+        transform: scale(2);
+        transform-origin: 100px 100px;
+    }
+    100% {
+        transform: scale(1);
+        transform-origin: none;
+    }
+}
+
+@keyframes box-bottom-slide {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateX(0);
+    }
+}
+
+@keyframes box-lid-slide {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
+@keyframes check-slide {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px)
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0px)
+    }
+}
+
+/* Animated pop-up on dashboard when adding on new wishes or people */
+
+.add-gift__popup, .add-people__popup {
+    animation-name: popup;
+    animation: popup .5s forwards;
+}
+
+@keyframes popup {
+    0% {
+        transform: translateY(10px);
+        height: 20rem;
+    }
+    100% {
+        transform: translateY(0px);
+        height: 25rem;
+    }
+}
+
+/* Animated slide-out when changing tab from people to wishlist */
+
+.people-out {
+    animation-name: people-out;
+    animation: people-out .5s ease;
+}
+
+@keyframes people-out {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+/* Animated slide-out when changing tab from wishlist to people */
+
+.gifts-out {
+    animation-name: gifts-out;
+    animation: gifts-out .5s ease;
+}
+
+@keyframes gifts-out {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}

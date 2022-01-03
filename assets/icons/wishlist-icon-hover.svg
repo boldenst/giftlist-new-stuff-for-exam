@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="70" viewBox="0 0 60 70">
+  <g id="wishlist-icon-hover" transform="translate(-20 -15)">
+    <g id="Rectangle_105" data-name="Rectangle 105" transform="translate(20 15)" fill="none" stroke="#42cb5d" stroke-width="3">
+      <path d="M4,0H56a4,4,0,0,1,4,4V58A12,12,0,0,1,48,70H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" stroke="none"/>
+      <path d="M4,1.5H56A2.5,2.5,0,0,1,58.5,4V58A10.5,10.5,0,0,1,48,68.5H4A2.5,2.5,0,0,1,1.5,66V4A2.5,2.5,0,0,1,4,1.5Z" fill="none"/>
+    </g>
+    <g id="Group_622" data-name="Group 622" transform="translate(2)">
+      <path id="Path_882" data-name="Path 882" d="M0,0H35.3" transform="translate(30.5 35.5)" fill="none" stroke="#42cb5d" stroke-linecap="round" stroke-width="3"/>
+      <path id="Path_883" data-name="Path 883" d="M0,0H30" transform="translate(30 50)" fill="none" stroke="#42cb5d" stroke-linecap="round" stroke-width="3"/>
+      <path id="Path_884" data-name="Path 884" d="M0,0H30" transform="translate(30 64.5)" fill="none" stroke="#42cb5d" stroke-linecap="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

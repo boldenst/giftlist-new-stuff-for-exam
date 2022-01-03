@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" href="./assets/images/logo-72x72.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/assets/images/logo-72x72.png">
+    <link rel="stylesheet" href="https://use.typekit.net/ral6jgm.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <title>Min ønskeliste | Gavelisten</title>
+    <!-- Google ads integration -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1013685091520454"
+        crossorigin="anonymous"></script>
+</head>
+<!-- Page is done as a "Single page application" which means that this html page contains content of multiple pages -->
+
+<body>
+    <!-- Header with settings and heading -->
+    <header class="giftlist-header">
+        <h2 class="people-heading">Gaver til andre</h2>
+        <h2 class="wishlist-heading content-hide">Min ønskeliste</h2>
+        <h2 class="settings-heading content-hide">Indstillinger</h2>
+        <button class="top-add-btn bottom-add-people_btn"></button>
+        <button class="top-add-btn bottom-add-gift_btn content-hide"></button>
+        <button class="settings-open"></button>
+    </header>
+    <!-- Settings page -->
+    <main class="settings-container">
+        <!-- This is where the account details are displayed to the user -->
+        <h2 class="settings-overlay-heading">Indstillinger</h2>
+        <button class="settings-close"></button>
+        <div class="settings-container-userinfo">
+            <div class="account-details"></div>
+            <button class="settings-change-password">Skift adgangskode</button>
+        </div>
+        <!-- This is where we intent to implement different themes to switch between -->
+        <section class="settings-themes">
+            <h2>Temaer</h2>
+            <table class="settings-themes-table">
+                <colgroup class="settings-themes-colgroup">
+                    <col span="1">
+                    <col class="settings-themes-col--rev">
+                </colgroup>
+                <tr>
+                    <td>Lyst</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>Mørkt</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>Jul</td>
+                    <td>O</td>
+                </tr>
+            </table>
+        </section>
+        <a class="text logout" id="logout" href="./index.html">Log ud</a>
+    </main>
+    <!-- This is where the data of the collections are displayed, such as gifts and people -->
+    <main class="peoplelist-main">
+        <ul class="people"></ul>
+        <ul class="gifts"></ul>
+    </main>
+    <!-- A pop up form for adding new gifts/wishes for the user -->
+    <div class="add-gift__popup">
+        <form id="gift-form">
+            <div class="input-field">
+                <h2>Tilføj ønske</h2>
+                <label>Gave:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="input-field">
+                <label>Pris:</label>
+                <input type="text" id="price" name="price" required>
+            </div>
+            <div class="input-field">
+                <label for="title">Indhold</label>
+                <textarea id="content" name="content" required></textarea>
+            </div>
+            <button onclick="submit"></button>
+        </form>
+    </div>
+    <!-- A pop up form for adding new people -->
+
+    <div class="add-people__popup">
+        <form id="people-form">
+            <div class="input-field">
+                <h2>Tilføj person</h2>
+                <label>Navn:</label>
+                <input type="title" id="title" name="title" required>
+            </div>
+            <button onclick="submit"></button>
+        </form>
+    </div>
+    <!-- This is the darker backdrop, which is shown when a popup is active -->
+    <div class="backdrop"></div>
+    <!-- The navigation for mobile and tablet -->
+    <nav class="bottomnav-mobile">
+        <button class="bottom-link_btn bottom-link__people people-icon-active">Personer</button>
+        <button class="bottom-add_btn bottom-add-people_btn"></button>
+        <button class="bottom-add_btn bottom-add-gift_btn content-hide"></button>
+        <button class="bottom-link_btn bottom-link__wishlist">Ønskeliste</button>
+    </nav>
+    <!-- The navigation for desktop -->
+    <nav class="sidenav">
+        <div>
+            <a class="logo-nav"><img class="logo-icon" src="./images/icons/logo.svg" alt="gavelisten-logo">
+                Gavelisten</a>
+            <button class="side-link side-link__people side-link__people--active">Personer</button>
+            <button class="side-link side-link__wishes">Ønskeliste</button>
+        </div>
+
+        <div class="sidenav-settings-container">
+            <button class="side-link side-link__settings">Indstillinger</button>
+            <a class="text logout-nav" id="logout" href="./index.html">Log ud</a>
+        </div>
+    </nav>
+    <!-- relavant scripts -->
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase-firestore.js"></script>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/firebase.js"></script>
+    <script src="./js/auth.js"></script>
+    <script>
+        // Logout method, displayed here to load before other scripts
+        const logout = document.querySelector('#logout');
+        logout.addEventListener('click', (e) => {
+            // e.preventDefault();
+            auth.signOut()
+        });
+    </script>
+    <script src="./js/app.js"></script>
+    <script src="./js/people.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

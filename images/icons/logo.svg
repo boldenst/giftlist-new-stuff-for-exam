@@ -1,0 +1,15 @@
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" width="139.616" height="139.616" viewBox="0 0 139.616 139.616">
+  <g id="Layer_1" data-name="Layer 1" transform="translate(0 0)">
+    <circle id="logo-green-circle" cx="69.808" cy="69.808" r="69.808" transform="translate(0 0)" fill="#42cb5d"/>
+    <rect id="logo-wing-left" width="5.03" height="16.223" rx="2.515" transform="translate(58.279 39.535) rotate(-45)" fill="#fff"/>
+    <rect id="logo-wing-right" width="5.03" height="25.559" rx="2.515" transform="translate(84.264 29.381) rotate(45)" fill="#fff"/>
+    <g id="logo-box-lit">
+      <path id="Path_858" data-name="Path 858" d="M195.407,125.89H167.18v12.252h28.227a3.362,3.362,0,0,0,3.358-3.358v-5.536A3.362,3.362,0,0,0,195.407,125.89Z" transform="translate(-95.485 -71.902)" fill="#fff"/>
+      <path id="Path_859" data-name="Path 859" d="M116.309,125.89H88.074a3.358,3.358,0,0,0-3.354,3.358v5.536a3.358,3.358,0,0,0,3.354,3.358h28.235Z" transform="translate(-48.388 -71.902)" fill="#fff"/>
+    </g>
+    <g id="logo-box-bottom">
+      <path id="Path_860" data-name="Path 860" d="M121.255,162.28H93.38v28.536a3.86,3.86,0,0,0,3.915,3.8h23.955Z" transform="translate(-53.334 -92.688)" fill="#fff"/>
+      <path id="Path_861" data-name="Path 861" d="M167.18,162.28v32.335h23.938a3.86,3.86,0,0,0,3.915-3.8V162.28Zm19.8,22.386a.622.622,0,0,1-.618.622H171.975a.617.617,0,0,1-.618-.622v-.146a.613.613,0,0,1,.618-.618h14.384a.618.618,0,0,1,.618.618Zm0-6.145a.618.618,0,0,1-.618.618H171.975a.613.613,0,0,1-.618-.618v-.146a.613.613,0,0,1,.618-.618h14.384a.618.618,0,0,1,.618.618Zm3.212-5.528h-18.14a.695.695,0,0,1,0-1.385h18.14a.695.695,0,0,1,0,1.385Z" transform="translate(-95.485 -92.688)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
