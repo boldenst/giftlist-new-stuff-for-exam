@@ -241,3 +241,7 @@ input:-webkit-autofill:active{
     top: .1rem;
     left: .1rem;
 }
+
+#logo-green-circle {
+    fill: var(--color-primary)
+}
