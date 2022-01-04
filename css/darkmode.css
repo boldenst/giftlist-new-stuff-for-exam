@@ -187,7 +187,7 @@ input:-webkit-autofill:active{
     border-bottom: solid .15rem var(--color-primary);
 }
 
-#people-form button {
+#people-form button, #gift-form button {
     background-image: url(../assets/darkmode/icons/checkmark-darkmode.svg);
     background-color: var(--color-primary);
     background-repeat: no-repeat;
