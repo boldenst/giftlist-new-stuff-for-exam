@@ -136,9 +136,22 @@ $(".settings-close").click(function () {
     $(".settings-container").removeClass("settings-container-open");
 });
 
+$(".settings-theme-selector").click(function () {
+    $(".settings-theme-selector").removeClass("settings-theme-selector--current");
+    $(this).addClass("settings-theme-selector--current");
+});
+
 // register service worker
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('../sw.js')
     // .then(reg => console.log('service worker registered'))
     // .catch(err => console.log('service worker not registered', err));
 }
+
+$(".darkmode").click(function() {
+    $('head').append('<link rel="stylesheet" type="text/css" href="./css/darkmode.css">')
+});
+
+$(".defaultmode").click(function() {
+    $('link[rel=stylesheet][href~="./css/darkmode.css"]').remove();
+});

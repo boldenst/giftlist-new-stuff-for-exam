@@ -1,0 +1,243 @@
+:root {
+    --color-primary: #7942CB;
+    --color-drop-shadow: #353452;
+    --color-list-backgound: #21202F;
+    --color-backgound: #121212;
+    --color-nav: #181818;
+    --color-gray-text: #828282;
+    --color-text: #FFFFFF;
+    --color-checkmark: #487EC6;
+}
+
+
+
+.heading, .text, p, .auth-form h2, .settings-overlay-heading {
+    color: var(--color-text);
+}
+
+body, .settings-container {
+    background-color: var(--color-backgound);
+}
+
+.auth-nav li:nth-child(2) {
+    background-color: var(--color-backgound);
+    border: solid .15rem var(--color-primary);
+}
+
+.auth-form input {
+    border-bottom: solid .15rem var(--color-gray-text);
+    color: var(--color-text);
+}
+
+.auth-form input:focus {
+    border-bottom: solid .15rem var(--color-primary);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px var(--color-backgound) inset !important;
+    -webkit-text-fill-color: var(--color-text);
+}
+
+.auth-form button {
+    box-shadow: 0px 3px 6px var(--color-drop-shadow);
+}
+
+.bottomnav-mobile {
+    background-color: var(--color-nav);
+}
+
+.bottom-link__wishlist {
+    background-image: url(../assets/darkmode/icons/wishlist-icon-darkmode.svg);
+    color: var(--color-gray-text);
+}
+
+.wishlist-icon-active {
+    background-image: url(../assets/darkmode/icons/wishlist-icon-focused-darkmode.svg);
+    color: var(--color-primary);
+}
+
+.bottom-link__people {
+    background-image: url(../assets/darkmode/icons/people-icon-darkmode.svg);
+    color: var(--color-gray-text);
+}
+
+.people-icon-active {
+    background-image: url(../assets/darkmode/icons/people-icon-focused-darkmode.svg);
+    color: var(--color-primary);
+}
+
+.giftlist-header {
+    background-color: var(--color-backgound);
+}
+
+.giftlist-header h1 {
+    color: var(--color-text);
+
+}
+
+.wishlist-heading, .people-heading, .settings-heading {
+    color: var(--color-text);
+}
+
+.settings-open {
+    background-image: url(../assets/darkmode/icons/settings-icon-darkmode.svg);
+    background-color: var(--color-nav);
+}
+
+.settings-close {
+    background-image: url(../assets/darkmode/icons/close-icon-darkmode.svg);
+    background-size: 40%;
+    background-color: var(--color-nav);
+}
+
+.bottom-add_btn {
+    background-image: url(../assets/darkmode/icons/bottom-add-icon-darkmode.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-primary);
+}
+
+.account-details div p {
+    color: var(--color-gray-text);
+}
+
+.account-details div div p {
+    color: var(--color-text);
+}
+
+.change-info {
+    background-image: url(../assets/darkmode/icons/change-info-darkmode.svg);
+}
+
+.settings-themes-table tr {
+    color: var(--color-text);
+}
+
+.settings-themes h2 {
+    color: var(--color-text);
+}
+
+.settings-container-userinfo {
+    border-bottom: solid .15rem var(--color-gray-text);
+}
+
+.logout {
+    box-shadow: 0px 3px 6px var(--color-drop-shadow);
+}
+
+.giftlist-main ul li, .peoplelist-main ul li {
+    background-color: var(--color-list-backgound);
+    box-shadow: 0px 4px 10px var(--color-drop-shadow);
+}
+
+.delete-person-icon {
+    background-image: url(../assets/darkmode/icons/close-icon-darkmode.svg);
+}
+
+.people-added-img {
+    background-image: url(../assets/darkmode/icons/person-default-icon-darkmode.svg);
+}
+
+.people-added-content-container h2 {
+    color: var(--color-text);
+}
+
+.people-added-add-info {
+    background-image: url(../assets/darkmode/icons/bottom-add-icon-darkmode.svg);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--color-primary);
+}
+
+.add-gift__popup, .add-people__popup {
+    background-color: var(--color-list-backgound);
+    box-shadow: 0px 4px 10px var(--color-drop-shadow);
+}
+
+.input-field h2 {
+    color: var(--color-text);
+}
+
+.input-field label {
+    color: var(--color-gray-text);
+}
+
+.input-field textarea {
+    background-color: var(--color-list-backgound);
+    color: var(--color-text);
+    border-bottom: solid .15rem var(--color-gray-text);
+}
+
+.input-field input {
+    background-color: var(--color-list-backgound);
+    border-bottom: solid .15rem var(--color-gray-text);
+    color: var(--color-text);
+}
+
+.input-field textarea:focus {
+    border-bottom: solid .15rem var(--color-primary);
+}
+
+.input-field input:focus {
+    border-bottom: solid .15rem var(--color-primary);
+}
+
+#people-form button {
+    background-image: url(../assets/darkmode/icons/checkmark-darkmode.svg);
+    background-color: var(--color-primary);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+.render-gift-title {
+    color: var(--color-text);
+}
+
+.render-gift-price-container-column p {
+    color: var(--color-gray-text);
+}
+
+.render-gift-price-container p {
+    color: var(--color-text);
+}
+
+.render-gift-element-container p:first-of-type {
+    color: var(--color-gray-text);
+}
+
+.settings-theme-selector {
+    height: 1rem;
+    width: 1rem;
+    background-color: transparent;
+    border-radius: 50%;
+    border: solid .15rem var(--color-text);
+    position: relative;
+}
+
+.settings-theme-selector:before {
+    content: '';
+    position: absolute;
+    width: .4rem;
+    height: .4rem;
+    border-radius: 50%;
+    background-color: var(--color-text);
+    top: .15rem;
+    left: .15rem;
+}
+
+.settings-theme-selector:not(.settings-theme-selector--current):before {
+    content: '';
+    position: absolute;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: var(--color-backgound);
+    top: .1rem;
+    left: .1rem;
+}
