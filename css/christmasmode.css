@@ -1,12 +1,17 @@
 :root {
     --color-primary: #BB2528;
-    --color-drop-shadow: #353452;
+    --color-drop-shadow: rgba(0, 0, 0, 30%);
     --color-list-backgound: #BB2528;
+    --color-gold: #F8B229;
+    --color-green: #42CB5D;
     --color-background: #B4E0EA;
-    --color-nav: #FFFFFF;
-    --color-text: #FFFFFF;
+    --color-nav: #fff;
+    --color-text: #828282;
+    --color-text-dark: rgb(24, 24, 24);
+    --color-snow: #fff;
     --color-text-green: #25A75E;
     --color-checkmark: #487EC6;
+    --color-gray-text: #828282;
 }
 
 .christmas-bg {
@@ -20,7 +25,7 @@
 
 .snowflake:nth-of-type(1) {
     top: 10vh;
-    left: 40vw;
+    left: 60vw;
 }
 
 .snowflake:nth-of-type(2) {
@@ -76,8 +81,8 @@
         90deg,
         rgba(0, 0, 0, 0) 0%,
         rgba(0, 0, 0, 0) 43%,
-        var(--color-text) 43%,
-        var(--color-text) 57%,
+        var(--color-snow) 43%,
+        var(--color-snow) 57%,
         rgba(0, 0, 0, 0) 57%,
         rgba(0, 0, 0, 0) 100%
     ),
@@ -85,8 +90,8 @@
         -30deg,
         rgba(0, 0, 0, 0) 0%,
         rgba(0, 0, 0, 0) 45%,
-        var(--color-text) 45%,
-        var(--color-text) 55%,
+        var(--color-snow) 45%,
+        var(--color-snow) 55%,
         rgba(0, 0, 0, 0) 55%,
         rgba(0, 0, 0, 0) 100%
     ),
@@ -94,15 +99,19 @@
         30deg,
         rgba(0, 0, 0, 0) 0%,
         rgba(0, 0, 0, 0) 45%,
-        var(--color-text) 45%,
-        var(--color-text) 55%,
+        var(--color-snow) 45%,
+        var(--color-snow) 55%,
         rgba(0, 0, 0, 0) 55%,
         rgba(0, 0, 0, 0) 100%
     );
 }
 
-.heading, .text, p, .auth-form h2, .settings-overlay-heading {
+.heading, .text, .auth-form h2 {
     color: var(--color-text);
+}
+
+.heading, .text, p {
+    color: #fff;
 }
 
 body, .settings-container {
@@ -126,7 +135,7 @@ body, .settings-container {
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
+input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px var(--color-backgound) inset !important;
     -webkit-text-fill-color: var(--color-text);
 }
@@ -169,18 +178,16 @@ input:-webkit-autofill:active{
 }
 
 .wishlist-heading, .people-heading, .settings-heading {
-    color: var(--color-text);
+    color: var(--color-text-dark);
 }
 
 .settings-open {
-    background-image: url(../assets/darkmode/icons/settings-icon-darkmode.svg);
-    background-color: var(--color-nav);
+    background-image: url(../assets/icons/settings-icon-green-fill.svg);
+    background-color: var(--color-primary);
 }
 
 .settings-close {
-    background-image: url(../assets/darkmode/icons/close-icon-darkmode.svg);
-    background-size: 40%;
-    background-color: var(--color-nav);
+    background-color: var(--color-green);
 }
 
 .bottom-add_btn {
@@ -188,31 +195,31 @@ input:-webkit-autofill:active{
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: var(--color-primary);
+    background-color: var(--color-gold);
 }
 
 .account-details div p {
-    color: var(--color-gray-text);
+    color: var(--color-text);
 }
 
 .account-details div div p {
-    color: var(--color-text);
+    color: var(--color-text-dark);
 }
 
 .change-info {
-    background-image: url(../assets/darkmode/icons/change-info-darkmode.svg);
+    background-image: url(../assets/christmasmode/edit-item-red.svg);
 }
 
 .settings-themes-table tr {
-    color: var(--color-text);
+    color: var(--color-text-dark);
 }
 
 .settings-themes h2 {
-    color: var(--color-text);
+    color: var(--color-text-dark);
 }
 
 .settings-container-userinfo {
-    border-bottom: solid .15rem var(--color-gray-text);
+    border-bottom: solid .15rem var(--color-snow);
 }
 
 .logout {
@@ -229,11 +236,11 @@ input:-webkit-autofill:active{
 }
 
 .people-added-img {
-    background-image: url(../assets/darkmode/icons/person-default-icon-darkmode.svg);
+    background-image: url(../assets/icons/user-icon.svg);
 }
 
 .people-added-content-container h2 {
-    color: var(--color-text);
+    color: var(--color-snow);
 }
 
 .people-added-add-info {
@@ -241,7 +248,7 @@ input:-webkit-autofill:active{
     background-size: 50%;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: var(--color-primary);
+    background-color: var(--color-green);
 }
 
 .add-gift__popup, .add-people__popup {
@@ -250,43 +257,43 @@ input:-webkit-autofill:active{
 }
 
 .input-field h2 {
-    color: var(--color-text);
+    color: var(--color-snow);
 }
 
 .input-field label {
-    color: var(--color-gray-text);
+    color: var(--color-snow);
 }
 
 .input-field textarea {
     background-color: var(--color-list-backgound);
     color: var(--color-text);
-    border-bottom: solid .15rem var(--color-gray-text);
+    border-bottom: solid .15rem var(--color-snow);
 }
 
 .input-field input {
     background-color: var(--color-list-backgound);
-    border-bottom: solid .15rem var(--color-gray-text);
-    color: var(--color-text);
+    border-bottom: solid .15rem var(--color-snow);
+    color: var(--color-snow);
 }
 
 .input-field textarea:focus {
-    border-bottom: solid .15rem var(--color-primary);
+    border-bottom: solid .15rem var(--color-green);
 }
 
 .input-field input:focus {
-    border-bottom: solid .15rem var(--color-primary);
+    border-bottom: solid .15rem var(--color-green);
 }
 
 #people-form button, #gift-form button {
-    background-image: url(../assets/darkmode/icons/checkmark-darkmode.svg);
+    background-image: url(../assets/icons/add-item-checkmark.svg);
     background-color: var(--color-primary);
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 100%;
     background-position: center;
 }
 
 .render-gift-title {
-    color: var(--color-text);
+    color: var(--color-snow);
 }
 
 .render-gift-price-container-column p {
@@ -294,7 +301,7 @@ input:-webkit-autofill:active{
 }
 
 .render-gift-price-container p {
-    color: var(--color-text);
+    color: var(--color-snow);
 }
 
 .render-gift-element-container p:first-of-type {
@@ -302,23 +309,24 @@ input:-webkit-autofill:active{
 }
 
 .settings-theme-selector {
-    height: 1rem;
-    width: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: none;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 30%);
     background-color: transparent;
     border-radius: 50%;
-    border: solid .15rem var(--color-text);
     position: relative;
 }
 
 .settings-theme-selector:before {
     content: '';
     position: absolute;
-    width: .4rem;
-    height: .4rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
-    background-color: var(--color-text);
-    top: .15rem;
-    left: .15rem;
+    background-color: var(--color-primary);
+    top: calc(50% - .5rem);
+    left: calc(50% - .5rem);
 }
 
 .settings-theme-selector:not(.settings-theme-selector--current):before {
@@ -327,7 +335,7 @@ input:-webkit-autofill:active{
     width: .5rem;
     height: .5rem;
     border-radius: 50%;
-    background-color: var(--color-backgound);
+    background-color: transparent;
     top: .1rem;
     left: .1rem;
 }
@@ -337,5 +345,15 @@ input:-webkit-autofill:active{
 }
 
 .bottom-link_btn {
-    color: var(--color-text-green);
+    color: var(--color-gray-text);
+}
+
+.people-icon-active {
+    background-image: url(../assets/christmasmode/people-icon-focused-christmas.svg);
+    color: var(--color-primary);
+}
+
+.wishlist-icon-active {
+    background-image: url(../assets/christmasmode/wishlist-icon-focused-christmas.svg);
+    color: var(--color-primary);
 }
