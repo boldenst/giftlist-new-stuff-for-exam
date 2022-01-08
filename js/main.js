@@ -149,9 +149,16 @@ if ('serviceWorker' in navigator) {
 }
 
 $(".darkmode").click(function() {
+    $('link[rel=stylesheet][href~="./css/christmasmode.css"]').remove();
     $('head').append('<link rel="stylesheet" type="text/css" href="./css/darkmode.css">')
 });
 
 $(".defaultmode").click(function() {
     $('link[rel=stylesheet][href~="./css/darkmode.css"]').remove();
+    $('link[rel=stylesheet][href~="./css/christmasmode.css"]').remove();
+});
+
+$(".christmasmode").click(function() {
+    $('link[rel=stylesheet][href~="./css/darkmode.css"]').remove();
+    $('head').append('<link rel="stylesheet" type="text/css" href="./css/christmasmode.css">')
 });

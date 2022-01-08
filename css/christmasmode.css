@@ -1,22 +1,112 @@
 :root {
-    --color-primary: #7942CB;
+    --color-primary: #BB2528;
     --color-drop-shadow: #353452;
-    --color-list-backgound: #21202F;
-    --color-backgound: #121212;
-    --color-nav: #181818;
-    --color-gray-text: #828282;
+    --color-list-backgound: #BB2528;
+    --color-background: #B4E0EA;
+    --color-nav: #FFFFFF;
     --color-text: #FFFFFF;
+    --color-text-green: #25A75E;
     --color-checkmark: #487EC6;
 }
 
+.christmas-bg {
+    width: 100vw;
+    top: 0;
+    height: calc(100vh - 4rem);
+    margin-bottom: calc(-100vh + 4rem);
+    position: sticky;
+    z-index: -10;
+}
 
+.snowflake:nth-of-type(1) {
+    top: 10vh;
+    left: 40vw;
+}
+
+.snowflake:nth-of-type(2) {
+    top: 30vh;
+    left: 35vw;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.snowflake:nth-of-type(3) {
+    top: 50vh;
+    left: 80vw;
+}
+
+.snowflake:nth-of-type(4) {
+    top: 80vh;
+    left: 10vw;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.snowflake:nth-of-type(5) {
+    top: 60vh;
+    left: 30vw;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.snowflake {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background: 
+    repeating-linear-gradient(
+        -30deg,
+        var(--color-background) 0%,
+        var(--color-background) 13%,
+        rgba(0, 0, 0, 0%) 13%,
+        rgba(0, 0, 0, 0%) 87%,
+        var(--color-background) 87%,
+        var(--color-background) 100%
+    ),
+    repeating-linear-gradient(
+        30deg,
+        var(--color-background) 0%,
+        var(--color-background) 13%,
+        rgba(0, 0, 0, 0%) 13%,
+        rgba(0, 0, 0, 0%) 87%,
+        var(--color-background) 87%,
+        var(--color-background) 100%
+    ),
+    repeating-linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0) 43%,
+        var(--color-text) 43%,
+        var(--color-text) 57%,
+        rgba(0, 0, 0, 0) 57%,
+        rgba(0, 0, 0, 0) 100%
+    ),
+    repeating-linear-gradient(
+        -30deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0) 45%,
+        var(--color-text) 45%,
+        var(--color-text) 55%,
+        rgba(0, 0, 0, 0) 55%,
+        rgba(0, 0, 0, 0) 100%
+    ),
+    repeating-linear-gradient(
+        30deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0) 45%,
+        var(--color-text) 45%,
+        var(--color-text) 55%,
+        rgba(0, 0, 0, 0) 55%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
 
 .heading, .text, p, .auth-form h2, .settings-overlay-heading {
     color: var(--color-text);
 }
 
 body, .settings-container {
-    background-color: var(--color-backgound);
+        background-color: var(--color-background);
 }
 
 .auth-nav li:nth-child(2) {
@@ -244,4 +334,8 @@ input:-webkit-autofill:active{
 
 #logo-green-circle {
     fill: var(--color-primary)
+}
+
+.bottom-link_btn {
+    color: var(--color-text-green);
 }
