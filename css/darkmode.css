@@ -1,15 +1,13 @@
 :root {
-    --color-primary: #7942CB;
-    --color-drop-shadow: #353452;
-    --color-list-backgound: #21202F;
+    --color-primary: #42CB5D;
+    --color-drop-shadow: rgb(0, 0, 0);
+    --color-list-backgound: #303030;
     --color-backgound: #121212;
     --color-nav: #181818;
     --color-gray-text: #828282;
     --color-text: #FFFFFF;
     --color-checkmark: #487EC6;
 }
-
-
 
 .heading, .text, p, .auth-form h2, .settings-overlay-heading {
     color: var(--color-text);
@@ -19,7 +17,7 @@ body, .settings-container {
     background-color: var(--color-backgound);
 }
 
-.auth-nav li:nth-child(2) {
+.auth-nav li:nth-child(2){
     background-color: var(--color-backgound);
     border: solid .15rem var(--color-primary);
 }
@@ -50,22 +48,18 @@ input:-webkit-autofill:active{
 }
 
 .bottom-link__wishlist {
-    background-image: url(../assets/darkmode/icons/wishlist-icon-darkmode.svg);
     color: var(--color-gray-text);
 }
 
 .wishlist-icon-active {
-    background-image: url(../assets/darkmode/icons/wishlist-icon-focused-darkmode.svg);
     color: var(--color-primary);
 }
 
 .bottom-link__people {
-    background-image: url(../assets/darkmode/icons/people-icon-darkmode.svg);
     color: var(--color-gray-text);
 }
 
 .people-icon-active {
-    background-image: url(../assets/darkmode/icons/people-icon-focused-darkmode.svg);
     color: var(--color-primary);
 }
 
@@ -83,7 +77,6 @@ input:-webkit-autofill:active{
 }
 
 .settings-open {
-    background-image: url(../assets/darkmode/icons/settings-icon-darkmode.svg);
     background-color: var(--color-nav);
 }
 
@@ -107,10 +100,6 @@ input:-webkit-autofill:active{
 
 .account-details div div p {
     color: var(--color-text);
-}
-
-.change-info {
-    background-image: url(../assets/darkmode/icons/change-info-darkmode.svg);
 }
 
 .settings-themes-table tr {
@@ -139,7 +128,7 @@ input:-webkit-autofill:active{
 }
 
 .people-added-img {
-    background-image: url(../assets/darkmode/icons/person-default-icon-darkmode.svg);
+    background-image: url(../assets/icons/user-icon.svg);
 }
 
 .people-added-content-container h2 {
@@ -212,23 +201,24 @@ input:-webkit-autofill:active{
 }
 
 .settings-theme-selector {
-    height: 1rem;
-    width: 1rem;
-    background-color: transparent;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: none;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 30%);
+    background-color: var(--color-nav);
     border-radius: 50%;
-    border: solid .15rem var(--color-text);
     position: relative;
 }
 
 .settings-theme-selector:before {
     content: '';
     position: absolute;
-    width: .4rem;
-    height: .4rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
-    background-color: var(--color-text);
-    top: .15rem;
-    left: .15rem;
+    background-color: var(--color-primary);
+    top: calc(50% - .5rem);
+    left: calc(50% - .5rem);
 }
 
 .settings-theme-selector:not(.settings-theme-selector--current):before {
@@ -237,11 +227,24 @@ input:-webkit-autofill:active{
     width: .5rem;
     height: .5rem;
     border-radius: 50%;
-    background-color: var(--color-backgound);
+    background-color: var(--color-nav);
     top: .1rem;
     left: .1rem;
 }
 
 #logo-green-circle {
     fill: var(--color-primary)
+}
+
+@media only screen and (min-width: 1100px) {
+    .sidenav {
+        background-color: var(--color-nav);
+    }
+    .logo-nav {
+        color: var(--color-primary) !important;
+    }
+
+    .logout-nav {
+        box-shadow: 0px 3px 6px var(--color-drop-shadow);
+    }
 }

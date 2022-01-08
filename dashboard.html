@@ -121,10 +121,19 @@
             <button class="side-link side-link__people side-link__people--active">Personer</button>
             <button class="side-link side-link__wishes">Ønskeliste</button>
         </div>
-
+        <div id="modal-signup" class="modal">
+            <div class="auth-container signup-container">
+                <form id="signup-form" class="auth-form">
+                </form>
+            </div>
+        </div>
+        <div class="auth-container login-container">
+            <form id="login-form" class="auth-form">
+            </form>
+        </div>
         <div class="sidenav-settings-container">
             <button class="side-link side-link__settings">Indstillinger</button>
-            <a class="text logout-nav" id="logout" href="./index.html">Log ud</a>
+            <a class="text logout-nav" id="logoutdesk" href="index.html">Log ud</a>
         </div>
     </nav>
     <!-- relavant scripts -->
@@ -138,6 +147,11 @@
         // Logout method, displayed here to load before other scripts
         const logout = document.querySelector('#logout');
         logout.addEventListener('click', (e) => {
+            // e.preventDefault();
+            auth.signOut()
+        });
+        const logoutdesk = document.querySelector('#logoutdesk');
+        logoutdesk.addEventListener('click', (e) => {
             // e.preventDefault();
             auth.signOut()
         });

@@ -9,6 +9,7 @@ auth.onAuthStateChanged(user => {
     }
 });
 
+
 // Sign up method
 const signupForm = document.querySelector('#signup-form');
 signupForm.addEventListener('submit', (e) => {
