@@ -26,7 +26,7 @@ signupForm.addEventListener('submit', (e) => {
         });
     }).then(() => {
         signupForm.reset();
-        window.location.href = "./dashboard.html";
+        window.location.href = "./tutorial.html";
     });
 });
 

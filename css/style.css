@@ -850,6 +850,82 @@ details summary::-webkit-details-marker {
     display: none;
 }
 
+/* TUTORIAL */
+
+.intro-container {
+    display: grid;
+    margin: 0 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'heading heading heading heading'
+    'intro intro intro intro'
+    '. watch watch .'
+    '. skip skip .'
+    ;
+    height: 100vh;
+}
+
+.intro-container h1 {
+    grid-area: heading;
+    font: var(--h1-font);
+    margin: 4rem 0 2rem 0;
+}
+
+.intro-container p {
+    grid-area: intro;
+    margin-bottom: 5rem;
+}
+
+.intro-container a {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--color-primary);
+    border-radius: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font: var(--p-font);
+    margin: .5rem 0;
+    font-size: 1.1em;
+}
+
+.intro-container a:nth-of-type(1) {
+    grid-area: watch;
+}
+
+.intro-container a:nth-of-type(2) {
+    grid-area: skip;
+    background-color: var(--main-ui-bg);
+    border: solid .15rem var(--color-primary);
+    color: var(--color-primary);
+    margin-bottom: 50vh;
+}
+.intro-video-container {
+    display: none;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+}
+
+.video--show {
+    display: flex;
+}
+
+.skip-intro {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2;
+    color: white;
+    font-family: graphie;
+    opacity: 80%;
+}
+
 /* TABLETS */
 @media only screen and (min-width: 481px) {
 
