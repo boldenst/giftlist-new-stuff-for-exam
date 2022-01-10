@@ -43,5 +43,8 @@ loginForm.addEventListener('submit', (e) => {
         // console.log(cred.user);
         loginForm.reset();
         window.location.href = "./dashboard.html";
-    });
+    }).catch(err => {
+        console.log('incorrect email or password');
+        $('.error-login').addClass('error-login-show');
+    });;
 });

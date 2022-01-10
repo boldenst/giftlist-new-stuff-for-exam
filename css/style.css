@@ -33,6 +33,15 @@
     text-decoration: none;
 }
 
+input,
+textarea,
+button,
+select,
+a, 
+details {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 /* Make it single page with toggles */
 
 .top-add-btn {
@@ -159,7 +168,7 @@ p {
     grid-template-rows: auto;
     grid-template-areas:
         'form form form form'
-    ;
+        'text text text text';
 }
 
 .auth-form {
@@ -173,6 +182,31 @@ p {
 
 #login-form {
     margin-top: 0rem;
+}
+
+.error-login {
+    opacity: 0;
+    background-color: transparent;
+    color: var(--color-red);
+    font-family: graphie;
+    text-align: center;
+    width: 100%;
+    -webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+}
+
+.error-login-show {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+@keyframes error-login {
+    0% {opacity: 0;}
+    10% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
 }
 
 .auth-form h1 {
@@ -221,6 +255,7 @@ p {
     font: var(--p-font);
     color: var(--main-ui-bg);
     box-shadow: 3px 3px 6px var(--color-black-light);
+    cursor: pointer;
 }
 
 .sign-up-ref {
@@ -228,6 +263,30 @@ p {
     color: var(--p-font-color);
 }
 
+/* Reset password */
+
+.back-button-reset {
+    display: inline-flex;
+    height: auto !important;
+    width: auto !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    background-color: transparent !important;
+    border: none;
+    font: var(--p-font);
+    color: var(--color-primary) !important;
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+.reset-text {
+    grid-area: text;
+    width: 100% !important;
+}
+
+.center-text {
+    text-align: center;
+}
 /* BOTTOMNAV MOBILE */
 
 .bottomnav-mobile {
@@ -724,6 +783,7 @@ p {
     height: 100%;
     background-repeat: no-repeat;
     background-size: 50%;
+    cursor: pointer;
 }
 
 details {
@@ -775,6 +835,10 @@ details p:before {
     transform: rotate(180deg);
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+.people-added-add-info:hover {
+    background-image: url(../assets/icons/add-item-icon-active.svg);
 }
 
 details summary::-webkit-details-marker {
@@ -870,6 +934,7 @@ details summary::-webkit-details-marker {
         grid-template-columns: repeat(8, 1fr);
         grid-template-areas:
             '. . form form form form . .'
+            '. . text text text text . .';
     }
 
     /*People Page*/
@@ -956,8 +1021,21 @@ details summary::-webkit-details-marker {
         grid-template-columns: repeat(12, 1fr);
         grid-template-areas:
             '. . . . form form form form . . . .'
+            '. . . . text text text text . . . .';
     }
 
+    /* hover buttons  */ 
+    .auth-nav li a:hover {
+        background-color: var(--color-secondary);
+        color: var(--main-ui-bg);
+        border: none;
+    }
+
+    .auth-form button:hover {
+        background-color: var(--color-secondary);
+        color: var(--main-ui-bg);
+        border: none;
+    }
     /*Navigation*/
     .bottomnav-mobile {
         display: none;
@@ -971,16 +1049,19 @@ details summary::-webkit-details-marker {
     .side-link {
         background-repeat: no-repeat;
         width: 100%;
-        margin: 0.4rem 0;
+        margin: 0 0;
         text-align: left;
         padding-left: 2rem;
-        padding: 6px 8px 6px 3.5rem !important;
+        padding: 10px 8px 10px 3.5rem !important;
         text-decoration: none;
         font: var(--p-font);
         color: var(--color-black-light);
         background-color: transparent;
         border: none;
-        margin-left: 0.5rem;
+        cursor: pointer;
+    }
+    .side-link:hover {
+        background-color: var(--main-ui-bg);
     }
 
     .side-link__people {
@@ -1050,6 +1131,11 @@ details summary::-webkit-details-marker {
         box-shadow: 3px 3px 6px var(--color-black-light);
         margin: 0.5rem auto 3rem auto;
     }
+    
+    .logout-nav:hover {
+        background-color: rgba(233, 65, 65, 70%);
+        color: var(--main-ui-bg);
+    }
 
 
     /* SETTINGS */
@@ -1073,6 +1159,11 @@ details summary::-webkit-details-marker {
 
     .settings-change-password {
         margin-top: 3rem;
+        cursor: pointer;
+    }
+
+    .settings-change-password:hover {
+        background-color: var(--color-secondary);
     }
 
     .change-info {
@@ -1116,7 +1207,12 @@ details summary::-webkit-details-marker {
     .settings-theme-selector {
         position: relative;
         right: -4.5rem;
+        cursor: pointer;
     }
+
+    .people::-webkit-scrollbar {
+        display: none;
+      } 
 
     .settings-container-userinfo {
         margin: 0;
@@ -1144,6 +1240,16 @@ details summary::-webkit-details-marker {
         left: -4rem;
     }
 
+    #people-form button,
+#gift-form button {
+    cursor: pointer;
+}
+#people-form button:hover,
+#gift-form button:hover {
+    background-image: url(../assets/icons/add-item-checkmark-active.svg);
+}
+
+
     /* Content */
     .top-add-btn {
         display: block;
@@ -1152,6 +1258,19 @@ details summary::-webkit-details-marker {
         height: 4rem;
         font-size: 3rem;
         background-image: url(../assets/icons/add-item-icon.svg);
+        background-size: cover;
+        border: none;
+        color: White;
+        justify-self: center;
+        cursor: pointer;
+    }
+    .top-add-btn:hover {
+        display: block;
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+        font-size: 3rem;
+        background-image: url(../assets/icons/add-item-icon-active.svg);
         background-size: cover;
         border: none;
         color: White;
