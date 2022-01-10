@@ -33,6 +33,15 @@
     text-decoration: none;
 }
 
+input,
+textarea,
+button,
+select,
+a, 
+details {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 /* Make it single page with toggles */
 
 .top-add-btn {
@@ -774,6 +783,7 @@ user-select: none; /* Standard */
     height: 100%;
     background-repeat: no-repeat;
     background-size: 50%;
+    cursor: pointer;
 }
 
 details {
@@ -825,6 +835,10 @@ details p:before {
     transform: rotate(180deg);
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+.people-added-add-info:hover {
+    background-image: url(../assets/icons/add-item-icon-active.svg);
 }
 
 details summary::-webkit-details-marker {
@@ -934,6 +948,18 @@ details summary::-webkit-details-marker {
             '. . . . text text text text . . . .';
     }
 
+    /* hover buttons  */ 
+    .auth-nav li a:hover {
+        background-color: var(--color-secondary);
+        color: var(--main-ui-bg);
+        border: none;
+    }
+
+    .auth-form button:hover {
+        background-color: var(--color-secondary);
+        color: var(--main-ui-bg);
+        border: none;
+    }
     /*Navigation*/
     .bottomnav-mobile {
         display: none;
@@ -957,6 +983,7 @@ details summary::-webkit-details-marker {
         background-color: transparent;
         border: none;
         margin-left: 0.5rem;
+        cursor: pointer;
     }
 
     .side-link__people {
@@ -1026,6 +1053,11 @@ details summary::-webkit-details-marker {
         box-shadow: 3px 3px 6px var(--color-black-light);
         margin: 0.5rem auto 3rem auto;
     }
+    
+    .logout-nav:hover {
+        background-color: rgba(233, 65, 65, 70%);
+        color: var(--main-ui-bg);
+    }
 
 
     /* SETTINGS */
@@ -1049,6 +1081,11 @@ details summary::-webkit-details-marker {
 
     .settings-change-password {
         margin-top: 3rem;
+        cursor: pointer;
+    }
+
+    .settings-change-password:hover {
+        background-color: var(--color-secondary);
     }
 
     .change-info {
@@ -1092,7 +1129,12 @@ details summary::-webkit-details-marker {
     .settings-theme-selector {
         position: relative;
         right: -4.5rem;
+        cursor: pointer;
     }
+
+    .people::-webkit-scrollbar {
+        display: none;
+      } 
 
     .settings-container-userinfo {
         margin: 0;
@@ -1120,6 +1162,16 @@ details summary::-webkit-details-marker {
         left: -4rem;
     }
 
+    #people-form button,
+#gift-form button {
+    cursor: pointer;
+}
+#people-form button:hover,
+#gift-form button:hover {
+    background-image: url(../assets/icons/add-item-checkmark-active.svg);
+}
+
+
     /* Content */
     .top-add-btn {
         display: block;
@@ -1128,6 +1180,19 @@ details summary::-webkit-details-marker {
         height: 4rem;
         font-size: 3rem;
         background-image: url(../assets/icons/add-item-icon.svg);
+        background-size: cover;
+        border: none;
+        color: White;
+        justify-self: center;
+        cursor: pointer;
+    }
+    .top-add-btn:hover {
+        display: block;
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+        font-size: 3rem;
+        background-image: url(../assets/icons/add-item-icon-active.svg);
         background-size: cover;
         border: none;
         color: White;
