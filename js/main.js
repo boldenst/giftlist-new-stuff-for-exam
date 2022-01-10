@@ -162,3 +162,10 @@ $(".christmasmode").click(function() {
     $('link[rel=stylesheet][href~="./css/darkmode.css"]').remove();
     $('head').append('<link rel="stylesheet" type="text/css" href="./css/christmasmode.css">')
 });
+
+//Video
+
+$(".start-video").click(function() {
+    $(".intro-video-container").addClass("video--show");
+    $(".video").trigger('play');
+});
