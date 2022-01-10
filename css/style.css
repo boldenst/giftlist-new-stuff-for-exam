@@ -175,6 +175,31 @@ p {
     margin-top: 0rem;
 }
 
+.error-login {
+    opacity: 0;
+    background-color: transparent;
+    color: var(--color-red);
+    font-family: graphie;
+    text-align: center;
+    width: 100%;
+    -webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+}
+
+.error-login-show {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+@keyframes error-login {
+    0% {opacity: 0;}
+    10% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
 .auth-form h1 {
     margin: 0 0 2rem 0;
 }
