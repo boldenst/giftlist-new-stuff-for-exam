@@ -40,9 +40,7 @@ auth.onAuthStateChanged(user => {
                         <details>
                         <summary class="people-added-add-info"></summary>
                         <p>Kommer snart</p>
-                        </details>
-                        
-                        </details>
+                        </details>                        
                     </li>
                 `;
                 html += li
@@ -65,7 +63,10 @@ auth.onAuthStateChanged(user => {
 peopleList.addEventListener('click', (e) => {
     e.stopPropagation();
     let id = e.target.parentElement.getAttribute('data-id');
-    db.collection('people').doc(id).delete().then(() => {
-
-    });
+    if (id === null) {
+        return;
+    } else {
+        db.collection('people').doc(id).delete().then(() => {
+        });
+    }
 });
