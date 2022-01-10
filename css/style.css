@@ -159,7 +159,7 @@ p {
     grid-template-rows: auto;
     grid-template-areas:
         'form form form form'
-    ;
+        'text text text text';
 }
 
 .auth-form {
@@ -246,6 +246,7 @@ user-select: none; /* Standard */
     font: var(--p-font);
     color: var(--main-ui-bg);
     box-shadow: 3px 3px 6px var(--color-black-light);
+    cursor: pointer;
 }
 
 .sign-up-ref {
@@ -253,6 +254,30 @@ user-select: none; /* Standard */
     color: var(--p-font-color);
 }
 
+/* Reset password */
+
+.back-button-reset {
+    display: inline-flex;
+    height: auto !important;
+    width: auto !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    background-color: transparent !important;
+    border: none;
+    font: var(--p-font);
+    color: var(--color-primary) !important;
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+.reset-text {
+    grid-area: text;
+    width: 100% !important;
+}
+
+.center-text {
+    text-align: center;
+}
 /* BOTTOMNAV MOBILE */
 
 .bottomnav-mobile {
@@ -819,6 +844,7 @@ details summary::-webkit-details-marker {
         grid-template-columns: repeat(8, 1fr);
         grid-template-areas:
             '. . form form form form . .'
+            '. . text text text text . .';
     }
 
     /*People Page*/
@@ -905,6 +931,7 @@ details summary::-webkit-details-marker {
         grid-template-columns: repeat(12, 1fr);
         grid-template-areas:
             '. . . . form form form form . . . .'
+            '. . . . text text text text . . . .';
     }
 
     /*Navigation*/
