@@ -846,6 +846,7 @@ details summary::-webkit-details-marker {
 .video {
     position: absolute;
     top: 0;
+    width: 100%
 }
 
 .video--show {
