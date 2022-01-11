@@ -849,6 +849,17 @@ details summary::-webkit-details-marker {
     width: 100%
 }
 
+.green {
+    color: var(--color-primary);
+}
+
+.auto-margin {
+    width: 12rem;
+    margin-left: calc(50% - 6rem);
+    position: relative;
+    bottom: -4rem;
+}
+
 .video--show {
     display: flex;
 }
